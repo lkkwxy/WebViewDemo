@@ -42,7 +42,8 @@ allowsBackForwardNavigationGestures  是否允许侧滑返回上一页
 <pre>
 - (nullable WKNavigation *)loadRequest:(NSURLRequest *)request;
 - (nullable WKNavigation *)loadHTMLString:(NSString *)string baseURL:(nullable NSURL *)baseURL;
-- (nullable WKNavigation *)loadData:(NSData *)data MIMEType:(NSString *)MIMEType characterEncodingName:(NSString *)characterEncodingName baseURL:(NSURL *)baseURL;</pre>
+- (nullable WKNavigation *)loadData:(NSData *)data MIMEType:(NSString *)MIMEType characterEncodingName:(NSString *)characterEncodingName baseURL:(NSURL *)baseURL;
+</pre>
 
 #二 WKWebViewUIDelegate
 
@@ -61,7 +62,8 @@ allowsBackForwardNavigationGestures  是否允许侧滑返回上一页
 - (void)webView:(WKWebView *)webView runJavaScriptTextInputPanelWithPrompt:(NSString *)prompt defaultText:(nullable NSString *)defaultText initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(NSString * __nullable result))completionHandler
 
 //window.close() 的时候调用
-- (void)webViewDidClose:(WKWebView *)webView</pre>
+- (void)webViewDidClose:(WKWebView *)webView
+</pre>
 
 #三 WKWebViewNavigationDelegate
 
