@@ -45,6 +45,7 @@ allowsBackForwardNavigationGestures  是否允许侧滑返回上一页
 - (nullable WKNavigation *)loadData:(NSData *)data MIMEType:(NSString *)MIMEType characterEncodingName:(NSString *)characterEncodingName baseURL:(NSURL *)baseURL;</pre>
 
 #二 WKWebViewUIDelegate
+
 <pre>
 //当需要打开一个新窗口的时候的调用，如a标签的target='_blank'，需要返回一个新的Webview
 - (nullable WKWebView *)webView:(WKWebView *)webView createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration forNavigationAction:(WKNavigationAction *)navigationAction windowFeatures:(WKWindowFeatures *)windowFeatures
@@ -63,6 +64,7 @@ allowsBackForwardNavigationGestures  是否允许侧滑返回上一页
 - (void)webViewDidClose:(WKWebView *)webView</pre>
 
 #三 WKWebViewNavigationDelegate
+
 <pre>
 //决定是否允许发起这个请求
 - (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler
